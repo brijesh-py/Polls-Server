@@ -1,4 +1,4 @@
-require("dotenv").config()
+
 const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
@@ -11,9 +11,4 @@ app.use(express.json());
 app.use(helmet());
 
 app.use("/api/poll", pollRouter);
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.warn(`Server is listening on port ${PORT}`);
-});
+module.exports = app
