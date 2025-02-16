@@ -7,6 +7,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "migrate": "sequelize-cli db:migrate",
+    "seed": "sequelize-cli db:seed:all",
     "start": "node src/app.js",
     "dev": "nodemon src/app.js"
   },
@@ -17,6 +19,7 @@
     "helmet": "^8.0.0",
     "pg": "^8.13.3",
     "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2",
     "sqlite3": "^5.1.7"
   }
 }

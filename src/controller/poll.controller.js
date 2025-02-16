@@ -12,7 +12,7 @@ const handleAddVote = async (req, res) => {
       });
     }
 
-    console.log("Found poll:", poll);
+
     const options = Array.isArray(poll.options)
       ? poll.options
       : JSON.parse(poll.options);
